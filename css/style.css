@@ -1,6 +1,8 @@
 .blackText{
-    /* color: black;
-    border-color: white; */
     color:rgb(255, 255, 255);
     text-shadow:#000 1px -1px, #000 -1px 1px, #000 1px 1px, #000 -1px -1px;
+}
+
+#teste{
+    text-align: center;
 }
