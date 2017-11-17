@@ -6,11 +6,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/style.css">
+        <?php include 'references.php'; ?>
 
         <title>Controle de Estoque</title>
     
@@ -18,26 +14,22 @@
     <body>
                 <header>
                     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-                        <a class="navbar-brand" href="#">Logo do sistema</a>
+                        <a class="navbar-brand" style="text-color: white;">Logo do sistema</a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse right" id="navbarCollapse">
-                            <ul class="navbar-nav mr-auto" id="teste">
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                            <ul class="navbar-nav ml-auto" id="teste">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+                                <a class="nav-link active" href="">Home <span class="sr-only"></span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
+                                <a class="nav-link" href="cadastro.html">Cadastre-se</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link disabled" href="#">Disabled</a>
+                                <a class="nav-link" href="login.phtml">Entrar</a>
                             </li>
                             </ul>
-                            <!-- <form class="form-inline mt-2 mt-md-0">
-                            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                            </form> -->
                         </div>
                     </nav>
                 </header>
@@ -56,30 +48,30 @@
                         <div class="carousel-item active">
                             <img class="first-slide" src="img/homeImg0.jpeg" alt="First slide">
                             <div class="container">
-                                <div class="carousel-caption text-left blackText">
-                                    <h1>Example headline.</h1>
-                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                                <div class="carousel-caption carouselText">
+                                    <h1>Cadastro completo.</h1><br><br><br>
+                                    <p>Nosso sistema oferece suporte para o cadastro de todos os tipos de mercadoria. Clique no botão para entender melhor.</p><br>
+                                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Tipos de Cadastro</a></p>
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item">
                         <img class="second-slide" src="img/homeImg3.jpeg" alt="Second slide">
                             <div class="container">
-                                <div class="carousel-caption blackText">
-                                    <h1>Another example headline.</h1>
-                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                                <div class="carousel-caption carouselText">
+                                    <h1>Acesse em qualquer lugar!</h1><br><br><br>
+                                    <p>Com nosso sistema você pode acompanhar seu estoque aonde estiver com a versão para aparelhos móveis.</p><br>
+                                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Baixe o App</a></p>
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img class="third-slide" src="img/homeImg2.jpeg" alt="Third slide">
                             <div class="container">
-                                <div class="carousel-caption text-right blackText">
-                                    <h1>One more for good measure.</h1>
-                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                                <div class="carousel-caption carouselText">
+                                    <h1>Já possui uma conta?</h1><br><br><br>
+                                    <p>Se você já possui uma conta clique no botão abaixo para acessar o sistema.</p><br>
+                                    <p><a class="btn btn-lg btn-primary" href="login.phtml" role="button">Acesse o Sistema</a></p>
                                 </div>
                             </div>
                         </div>
@@ -102,11 +94,15 @@
             
                     <div class="row featurette">
                         <div class="col-md-7">
-                        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                            <h2 class="featurette-heading">Fácil e Prático.</h2>
+                            <p class="lead">Quer saber tudo o que o nosso sistema pode oferecer? Descubra a melhor forma de automatizar seu estoque.
+                            <br>
+                            Clique no botão abaixo e descubra todas as funcionalidades que vão tornar o seu trabalho muito mais fácil.</p>
+                            <br>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Funcionalidades</a></p>
                         </div>
                         <div class="col-md-5">
-                        <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/homeImg1.jpg" data-holder-rendered="true">
+                            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/homeImg1.jpg" data-holder-rendered="true">
                         </div>
                     </div>
             
@@ -114,8 +110,10 @@
             
                     <div class="row featurette">
                         <div class="col-md-7 order-md-2">
-                        <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                        <h2 class="featurette-heading">Conheça nossos planos.</h2>
+                        <p class="lead">Temos o plano que atende suas necessidades e cabe no seu orçamento!</p>
+                        <br>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Planos</a></p>
                         </div>
                         <div class="col-md-5 order-md-1">
                         <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="img/homeImg3.jpeg" data-holder-rendered="true" style="width: 500px; height: 500px;">
@@ -126,11 +124,27 @@
             
                     <div class="row featurette">
                         <div class="col-md-7">
-                        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                        <h2 class="featurette-heading">Dúvidas ou Sugestões</h2>
+                        <p class="lead">Está com alguma dúvida? Possui alguma sugestão? Precisa de alguma funcionalidade que nós não temos?
+                            <br>Entre em contato no e-mail abaixo para falar conosco
+                            <br>nossoEmail@dominio.com</p>
                         </div>
                         <div class="col-md-5">
                         <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="img/homeImg2.jpeg" data-holder-rendered="true" style="width: 500px; height: 500px;">
+                        </div>
+                    </div>
+
+                    <hr class="featurette-divider">
+            
+                    <div class="row featurette">
+                        <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading">Conheça nossa equipe.</h2>
+                        <p class="lead">Quer saber mais sobre a PaBruRo? Clique no botão abaixo para saber mais sobre nossa equipe.</p>
+                        <br>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">PaBruRo</a></p>    
+                    </div>
+                        <div class="col-md-5 order-md-1">
+                        <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="img/homeImg3.jpeg" data-holder-rendered="true" style="width: 500px; height: 500px;">
                         </div>
                     </div>
             

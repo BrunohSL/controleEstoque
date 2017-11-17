@@ -1,6 +1,7 @@
-.blackText{
+.carouselText{
     color:rgb(255, 255, 255);
     text-shadow:#000 1px -1px, #000 -1px 1px, #000 1px 1px, #000 -1px -1px;
+    text-align: top;
 }
 
 #teste{
