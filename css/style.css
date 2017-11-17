@@ -4,6 +4,17 @@
     text-align: top;
 }
 
-#teste{
-    text-align: center;
+.carouselImg{
+    position: relative;
+    margin-left: 53px;
+}
+
+.featuresText{
+    position: relative;
+    margin-left: 80px;
+}
+
+#logo{
+    margin-left: 35px;
+    color: white;
 }
