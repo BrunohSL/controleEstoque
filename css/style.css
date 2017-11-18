@@ -4,14 +4,23 @@
     text-align: top;
 }
 
+.marginTop{
+    margin-top: 100px;
+}
+
 .carouselImg{
     position: relative;
-    margin-left: 53px;
+    margin-left: 40px;
 }
 
 .featuresText{
     position: relative;
-    margin-left: 80px;
+    margin-left: 70px;
+}
+
+.featureTextTop{
+    margin-top: 100px;
+    text-align: center;
 }
 
 #logo{
