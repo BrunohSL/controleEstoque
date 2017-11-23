@@ -75,12 +75,12 @@
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
                     <div class="form-group has-danger">
-                        <label class="sr-only" for="email">E-Mail Address</label>
+                        <label class="sr-only" for="name">User Name</label>
                         <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                             <div class="input-group-addon" style="width: 2.6rem">
                                 <i class="fa fa-user-o"></i>
                             </div>
-                            <input type="text" name="email" class="form-control" id="email" placeholder="Usuário" required autofocus>
+                            <input type="text" name="name" class="form-control" id="email" placeholder="Usuário" required autofocus>
                         </div>
                     </div>
                 </div>
@@ -96,50 +96,50 @@
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label class="sr-only" for="password">Password</label>
+                        <label class="sr-only" for="password">Senha</label>
                         <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                             <div class="input-group-addon" style="width: 2.6rem">
                                 <i class="fa fa-key"></i>
                             </div>
-                            <input type="password" name="password" class="form-control" id="password" placeholder="Senha" required>
+                            <input type="password" name="key" class="form-control" id="senha" placeholder="Senha" required>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <!-- <div class="col-md-3">
                     <div class="form-control-feedback">
                         <span class="text-danger align-middle">
-                            <!-- Put password error message here -->
+                            Put password error message here
                         </span>
                     </div>
-                </div>
+                </div> -->
             </div>
 
             <div class="row">
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label class="sr-only" for="password">Password</label>
+                        <label class="sr-only" for="password">Confirmação de Senha</label>
                         <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                             <div class="input-group-addon" style="width: 2.6rem">
                                 <i class="fa fa-key"></i>
                             </div>
-                            <input type="password" name="password" class="form-control" id="password" placeholder="Confirme a Senha" required>
+                            <input type="password" name="confirmKey" class="form-control" id="confirmaSenha" placeholder="Confirmação de senha" required>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <!-- <div class="col-md-3">
                     <div class="form-control-feedback">
                         <span class="text-danger align-middle">
-                            <!-- Put password error message here -->
+                            Put password error message here
                         </span>
                     </div>
-                </div>
+                </div> -->
             </div>
             
             <div class="row" style="padding-top: 1rem">
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
-                    <button type="submit" class="btn btn-success">
+                    <button type="submit" class="btn btn-success" style="width: 100%;">
                         Cadastrar</button>
                 </div>
             </div>
