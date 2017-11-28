@@ -42,7 +42,7 @@
     </header>
 
     <div class="container" style="margin-top: 100px;">
-        <form class="form-horizontal" role="form" method="POST" action="/login">
+        <form id="cadastroForm" class="form-horizontal" role="form" method="POST">
             <div class="row">
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
@@ -101,7 +101,7 @@
                             <div class="input-group-addon" style="width: 2.6rem">
                                 <i class="fa fa-key"></i>
                             </div>
-                            <input type="password" name="key" class="form-control" id="senha" placeholder="Senha" required>
+                            <input type="password" name="senha" class="form-control" id="senha" placeholder="Senha" required>
                         </div>
                     </div>
                 </div>
@@ -123,7 +123,7 @@
                             <div class="input-group-addon" style="width: 2.6rem">
                                 <i class="fa fa-key"></i>
                             </div>
-                            <input type="password" name="confirmKey" class="form-control" id="confirmaSenha" placeholder="Confirmação de senha" required>
+                            <input type="password" name="confirmaSenha" class="form-control" id="confirmaSenha" placeholder="Confirmação de senha" required>
                         </div>
                     </div>
                 </div>
@@ -146,6 +146,8 @@
         </form>
     </div>
 
+    <script src="js/cadastro.js"></script>
+    
 </body>
 
 </html>

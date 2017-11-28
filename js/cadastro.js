@@ -1,4 +1,15 @@
 jQuery(document).ready(function($){
+
+    // $( "#cadastroForm" ).validate({
+    //     debug: true,
+    //     success: "valid",
+    //     rules: {
+    //       senha: "required",
+    //       confirmaSenha: {
+    //         equalTo: "#senha"
+    //       }
+    //     }
+    // });
     
     //função que cadastra as informações dos forms no banco de dados
     function cadastro(targetElement){
@@ -18,6 +29,9 @@ jQuery(document).ready(function($){
 
         //recebe as informações que serão adicionadas no banco
         const data = form.serialize();
+
+
+
 
         //passa o caminho do arquivo de cadastro, o metodo e os dados do form (data)
         $.ajax({

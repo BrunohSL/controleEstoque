@@ -4,7 +4,7 @@ include 'connection.php';
 
 $email = $_POST['email'];
 $name = $_POST['name'];
-$key = $_POST['key'];
+$key = $_POST['senha'];
 
 $sql = "INSERT INTO USERS (EMAIL_USER, lOGIN_USER, KEY_USER) VALUES ('$email', '$name', '$key');";
 
