@@ -51,6 +51,9 @@ jQuery(document).ready(function($){
         })
     }
 
+    // var senha = $('senha').val;
+    // var confirmaSenha = $('confirmaSenha').val;
+
     $("form").submit(function(e) {
         
         //para a função do submit, fica na página e segue com o código

@@ -105,13 +105,13 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-md-3">
+                <div class="col-md-3">
                     <div class="form-control-feedback">
                         <span class="text-danger align-middle">
                             Put password error message here
                         </span>
                     </div>
-                </div> -->
+                </div>
             </div>
 
             <div class="row">
@@ -123,29 +123,30 @@
                             <div class="input-group-addon" style="width: 2.6rem">
                                 <i class="fa fa-key"></i>
                             </div>
-                            <input type="password" name="confirmaSenha" class="form-control" id="confirmaSenha" placeholder="Confirmação de senha" required>
+                            <input type="password" name="confirmaSenha" class="form-control" id="confirmaSenha" placeholder="Confirmação de senha">
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-md-3">
+                <div class="col-md-3">
                     <div class="form-control-feedback">
                         <span class="text-danger align-middle">
                             Put password error message here
                         </span>
                     </div>
-                </div> -->
+                </div>
             </div>
             
             <div class="row" style="padding-top: 1rem">
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
-                    <button type="submit" class="btn btn-success" style="width: 100%;">
+                    <button type="submit" class="btn btn-success" id="btnCadastro" style="width: 100%;">
                         Cadastrar</button>
                 </div>
             </div>
         </form>
     </div>
 
+    <script src="js/validacao.js"></script>
     <script src="js/cadastro.js"></script>
     
 </body>
