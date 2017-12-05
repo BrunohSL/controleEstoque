@@ -5,8 +5,7 @@ $('#btnCadastro').click( function() {
 
     if(senha != confirmaSenha){
 
-        // swal('Oops...','Digite a mesma senha nos dois campos!','error');
-        echo('echo');
+        swal('Oops...','Digite a mesma senha nos dois campos!','error');
         $('#senhaErrada').css("display", "block");
         return false;
     }
