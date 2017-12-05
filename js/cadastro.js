@@ -9,9 +9,6 @@ jQuery(document).ready(function($){
         //recebe as informações que serão adicionadas no banco
         const data = form.serialize();
 
-
-
-
         //passa o caminho do arquivo de cadastro, o metodo e os dados do form (data)
         $.ajax({
             url: 'insertUser.php',

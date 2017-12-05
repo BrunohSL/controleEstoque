@@ -47,6 +47,8 @@
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
                     <h2>Please Login</h2>
+                    <!-- Para validar o login pegar o e-mail de login, criptografa a senha digitada e faz um select no banco com essas informações.
+                         se retornar true conecta se não fala que a senha e login estão errados -->
                     <hr>
                 </div>
             </div>

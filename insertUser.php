@@ -6,6 +6,8 @@ $email = $_POST['email'];
 $name = $_POST['name'];
 $key = $_POST['senha'];
 
+$key = sha1($key);
+
 $sql = "INSERT INTO USERS (EMAIL_USER, lOGIN_USER, KEY_USER) VALUES ('$email', '$name', '$key');";
 
 if(mysqli_query($connection, $sql))
