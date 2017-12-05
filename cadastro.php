@@ -105,13 +105,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="form-control-feedback">
-                        <span class="text-danger align-middle">
-                            Put password error message here
-                        </span>
-                    </div>
-                </div>
             </div>
 
             <div class="row">
@@ -127,15 +120,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="form-control-feedback">
-                        <span class="text-danger align-middle">
-                            Put password error message here
-                        </span>
-                    </div>
-                </div>
             </div>
-            
+
+            <!-- <div class="row">
+                <div id="senhaErrada" class="senhaErrada alert alert-danger col-md-3" role="alert">
+                    <span class="align-middle">
+                        As senhas devem ser iguais
+                    </span>
+                </div>
+            </div> -->
+
             <div class="row" style="padding-top: 1rem">
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
