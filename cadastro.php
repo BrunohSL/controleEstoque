@@ -63,13 +63,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-md-3">
-                    <div class="form-control-feedback">
-                        <span class="text-danger align-middle">
-                            <i class="fa fa-close"></i> Example error message
-                        </span>
-                    </div>
-                </div> -->
             </div>
             <div class="row">
                 <div class="col-md-3"></div>
@@ -84,13 +77,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-md-3">
-                    <div class="form-control-feedback">
-                        <span class="text-danger align-middle">
-                            <i class="fa fa-close"></i> Example error message
-                        </span>
-                    </div>
-                </div> -->
             </div>
             <div class="row">
                 <div class="col-md-3"></div>

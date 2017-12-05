@@ -1,28 +1,7 @@
 jQuery(document).ready(function($){
-
-    // $( "#cadastroForm" ).validate({
-    //     debug: true,
-    //     success: "valid",
-    //     rules: {
-    //       senha: "required",
-    //       confirmaSenha: {
-    //         equalTo: "#senha"
-    //       }
-    //     }
-    // });
     
     //função que cadastra as informações dos forms no banco de dados
     function cadastro(targetElement){
-
-        // var senha = document.getElementById('senha').value;
-        // var confirmaSenha = document.getElementById('confirmaSenha').value;
-        
-        // alert(senha);
-        // alert(confirmaSenha);
-
-        // fazer um if para verificar se a validação passou. Se ppassar colocar o codigo abaixo caso 
-        // contrário jogar um sweet alert de erro e voltar para o cadastro (com as informações preenchidas 
-        // para correção).
 
         //recebe o formulário que foi clicado, formMonster-cad ou formItem-cad
         const form = $(targetElement);
@@ -50,9 +29,6 @@ jQuery(document).ready(function($){
             form.find('input').val('');
         })
     }
-
-    // var senha = $('senha').val;
-    // var confirmaSenha = $('confirmaSenha').val;
 
     $("form").submit(function(e) {
         
