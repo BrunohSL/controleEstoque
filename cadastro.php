@@ -87,7 +87,7 @@
                             <div class="input-group-addon" style="width: 2.6rem">
                                 <i class="fa fa-key"></i>
                             </div>
-                            <input type="password" name="senha" class="form-control" id="senha" placeholder="Senha" required>
+                            <input type="password" name="password" class="form-control" id="password" placeholder="Senha" required>
                         </div>
                     </div>
                 </div>
@@ -102,7 +102,7 @@
                             <div class="input-group-addon" style="width: 2.6rem">
                                 <i class="fa fa-key"></i>
                             </div>
-                            <input type="password" name="confirmaSenha" class="form-control" id="confirmaSenha" placeholder="Confirmação de senha">
+                            <input type="password" name="confirmPassword" class="form-control" id="confirmPassword" placeholder="Confirmação de senha">
                         </div>
                     </div>
                 </div>

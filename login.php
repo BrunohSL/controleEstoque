@@ -108,7 +108,7 @@
             <div class="row" style="padding-top: 1rem">
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
-                    <button type="submit" class="btn btn-success">
+                    <button id="btnLogin" type="submit" class="btn btn-success">
                         <i class="fa fa-sign-in"></i> Login</button>
                     <a class="btn btn-link" href="/password/reset">Forgot Your Password?</a>
                 </div>

@@ -4,11 +4,11 @@ include 'connection.php';
 
 $email = $_POST['email'];
 $name = $_POST['name'];
-$key = $_POST['senha'];
+$password = $_POST['password'];
 
-$key = sha1($key);
+$password = sha1($key);
 
-$sql = "INSERT INTO USERS (EMAIL_USER, lOGIN_USER, KEY_USER) VALUES ('$email', '$name', '$key');";
+$sql = "INSERT INTO USERS (EMAIL_USER, lOGIN_USER, KEY_USER) VALUES ('$email', '$name', '$password');";
 
 if(mysqli_query($connection, $sql))
 {
