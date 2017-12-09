@@ -18,4 +18,11 @@ Requisitos Não-Funcionais{
 
 Observações{
     1 - Exibir na tela inicial (em um grid) uma lista dos produtos que estão com uma quantidade próxima do mínimo do produto.
-}
+    2 - Interface customizavel na tela inicial. Criar um menu onde ficam disponíveis as informações que o usuário pode colocar na tela inicial. O usuário terá uma lista de funcionalidades e poderá escolher algumas delas para serem exibidas na tela inicial do sistema.
+        - Grid de produtos com baixo estoque
+        - Saldo das contas bancárias
+        - grid com os produtos que tiveram mais saída no periodo selecionado. (essa tela tem um grid que mostra os produtos e alguns campos onde o usuário pode escolher o periodo que está sendo filtrado)
+        - Vendas por período. (um grid das vendas com os campos para selecionar o período)
+    3 - Painel de gerênciamento. (Nessa tela terá todas as funcionalidades que podem ser exibidas na tela inicial. Aqui o administrador pode conferir as informações do item 2 em uma página)
+    4- Todas as informações da interface inicial vão caber dentro da tela, não terá barra de rolagem para facilitar a visualização de todo o conteúdo da tela inicial.
+    }
