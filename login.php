@@ -42,7 +42,7 @@
     </header>
 
     <div class="container" style="margin-top: 100px;">
-        <form class="form-horizontal" role="form" method="POST" action="/login">
+        <form class="form-horizontal" role="form" method="POST" action="validaLogin.php">
             <div class="row">
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
@@ -59,9 +59,9 @@
                         <label class="sr-only" for="email">E-Mail Address</label>
                         <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                             <div class="input-group-addon" style="width: 2.6rem">
-                                <i class="fa fa-at"></i>
+                            <i class="fa fa-user-o"></i>
                             </div>
-                            <input type="text" name="email" class="form-control" id="email" placeholder="you@example.com" required autofocus>
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Usuário" required autofocus>
                         </div>
                     </div>
                 </div>
@@ -82,7 +82,7 @@
                             <div class="input-group-addon" style="width: 2.6rem">
                                 <i class="fa fa-key"></i>
                             </div>
-                            <input type="password" name="password" class="form-control" id="password" placeholder="Password" required>
+                            <input type="password" name="password" class="form-control" id="password" placeholder="Senha" required>
                         </div>
                     </div>
                 </div>

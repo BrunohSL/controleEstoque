@@ -1,0 +1,21 @@
+Requisitos Funcionais{
+    Identificação: RF001
+    Módulo: Produto
+    Nome: Baixa de estoque
+    Data Criação: 09/12/2017
+    Versão: v0.1
+    Descrição: Ao diminuir a quantidade que um produto tem em estoque o sistema deve reduzir do faturamento o valor de venda baseado nos produtos e quantidade que foram vendidos.
+}
+
+Requisitos Não-Funcionais{
+    Identificação: RNF001
+    Módulo: 
+    Nome: 
+    Data Criação: 
+    Versão: v0.1
+    Descrição: 
+}
+
+Observações{
+    1 - Exibir na tela inicial (em um grid) uma lista dos produtos que estão com uma quantidade próxima do mínimo do produto.
+}

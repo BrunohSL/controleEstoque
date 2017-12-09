@@ -6,7 +6,7 @@ $email = $_POST['email'];
 $name = $_POST['name'];
 $password = $_POST['password'];
 
-$password = sha1($key);
+$password = sha1($password);
 
 $sql = "INSERT INTO USERS (EMAIL_USER, lOGIN_USER, KEY_USER) VALUES ('$email', '$name', '$password');";
 
