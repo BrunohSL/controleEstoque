@@ -15,11 +15,24 @@ if($query = mysqli_query($connection, $sql))
     $passwordDb = $result['KEY_USER'];
 
     if(($userDb == $userForm) && ($passwordDb == $passwordForm)){
+        // $user = $_GET['name'];
+        // $senha = $_GET['password'];
+        // echo 'teste';
+        // print($user);
+        // echo ($senha);
+        // die('xxx');
+        $_POST['name'] = $userForm;
+
         header("Location: dashboard.php");
     }
     else{
         header("Location: login.php");
-        echo 'Login e/ou senha incorretos';
+        ?>
+            <script>
+                swal('Oops...','Login e/ou senha incorretos','error');
+            </script>
+        <?php
+        //echo 'Login e/ou senha incorretos';
     }
 }
 else
