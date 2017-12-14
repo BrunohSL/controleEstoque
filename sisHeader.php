@@ -1,7 +1,3 @@
-<?php
-
-?>
-
 <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <a class="navbar-brand" id="logo">
@@ -29,6 +25,3 @@
       </div>
     </nav>
   </header>
-
-  <?php
-  

@@ -15,12 +15,7 @@ if($query = mysqli_query($connection, $sql))
     $passwordDb = $result['KEY_USER'];
 
     if(($userDb == $userForm) && ($passwordDb == $passwordForm)){
-        // $user = $_GET['name'];
-        // $senha = $_GET['password'];
-        // echo 'teste';
-        // print($user);
-        // echo ($senha);
-        // die('xxx');
+        
         $_POST['name'] = $userForm;
 
         header("Location: dashboard.php");
