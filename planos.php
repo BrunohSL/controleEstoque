@@ -20,32 +20,41 @@
 
         <!-- Three columns of text below the carousel -->
         <div class="row">
-            <div class="col-lg-4">
-                <img class="rounded-circle" src="img/img3.png" alt="Generic placeholder image"
-                    width="140" height="140">
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula
-                    ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                <p>
-                    <a class="btn btn-secondary" href="#" role="button">View details »</a>
-                </p>
+            <div style="background-color: lightgreen;" class="col-lg-3">
+                <div class="container">
+                    <!-- <img class="rounded-circle" src="img/img3.png" alt="Generic placeholder image"
+                    width="140" height="140"> -->
+                    <h2 style="text-align: center; margin-top: 60px;">Básico</h2>
+                    <br>
+                    <h3 style="text-align: center;">R$ 29,90</h3>
+                    <hr style="width: 50%; border: 1px solid;">
+                    <p style="text-align: center;">
+                        - Funcionalidade do plano
+                        <br> - Funcionalidade do plano
+                        <br> - Funcionalidade do plano
+                        <br> - Funcionalidade do plano
+                        <br> - Funcionalidade do plano
+                    </p>
+                    <p style="text-align: center;">
+                        <a class="btn btn-primary text-align: center;" href="#" role="button">Contratar</a>
+                    </p>
+                </div>
             </div>
             <!-- /.col-lg-4 -->
             <div class="col-lg-4">
-                <img class="rounded-circle" src="img/img2.png" alt="Generic placeholder image"
-                    width="140" height="140">
+                <img class="rounded-circle" src="img/img2.png" alt="Generic placeholder image" width="140" height="140">
                 <h2>Heading</h2>
                 <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis
                     consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-                    nibh.</p>
+                    nibh.
+                </p>
                 <p>
                     <a class="btn btn-secondary" href="#" role="button">View details »</a>
                 </p>
             </div>
             <!-- /.col-lg-4 -->
             <div class="col-lg-4">
-                <img class="rounded-circle" src="img/img2.png" alt="Generic placeholder image"
-                    width="140" height="140">
+                <img class="rounded-circle" src="img/img2.png" alt="Generic placeholder image" width="140" height="140">
                 <h2>Heading</h2>
                 <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta
                     felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
@@ -59,6 +68,8 @@
         <!-- /.row -->
 
     </div>
+
+    <?php include 'sisFooter.php' ?>
 
 </body>
 

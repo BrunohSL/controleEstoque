@@ -13,6 +13,8 @@
 <body>
 
     <?php include 'sisHeader.php';?>
+
+    <?php include 'sisFooter.php' ?>
     
 </body>
 </html>

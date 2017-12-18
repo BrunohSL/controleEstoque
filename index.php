@@ -32,7 +32,8 @@
                         <div class="container">
                             <div class="carousel-caption carouselText">
                                 <h1>Cadastro completo.</h1>
-                                <p>Nosso sistema oferece suporte para o cadastro de todos os tipos de mercadoria. Clique no botão para entender melhor.</p>
+                                <p>Nosso sistema oferece suporte para o cadastro de todos os tipos de mercadoria. Clique no
+                                    botão para entender melhor.</p>
                                 <br>
                                 <p>
                                     <a class="btn btn-lg btn-primary" href="sobre.php" role="button">Tipos de Cadastro</a>
@@ -45,7 +46,8 @@
                         <div class="container">
                             <div class="carousel-caption carouselText">
                                 <h1>Acesse em qualquer lugar!</h1>
-                                <p>Com nosso sistema você pode acompanhar seu estoque aonde estiver com a versão para aparelhos móveis.</p>
+                                <p>Com nosso sistema você pode acompanhar seu estoque aonde estiver com a versão para aparelhos
+                                    móveis.</p>
                                 <br>
                                 <p>
                                     <a class="btn btn-lg btn-primary" href="#" role="button">Baixe o App</a>
@@ -85,7 +87,8 @@
                 <div class="col-md-6 featuresText featureTextTop">
                     <h2 class="featurette-heading">Fácil e Prático.</h2>
                     <p class="lead">Quer saber tudo o que o nosso sistema pode oferecer? Descubra a melhor forma de automatizar seu estoque.
-                        <br> Clique no botão abaixo e descubra todas as funcionalidades que vão tornar o seu trabalho muito mais fácil.</p>
+                        <br> Clique no botão abaixo e descubra todas as funcionalidades que vão tornar o seu trabalho muito mais
+                        fácil.</p>
                     <br>
                     <p>
                         <a class="btn btn-lg btn-primary" href="sobre.php" role="button">Funcionalidades</a>
@@ -109,7 +112,7 @@
                     </p>
                 </div>
                 <div class="col-md-5 featuresText order-md-1">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="img/planos.jpg" data-holder-rendered="true"
+                    <img class="featurette-image img-fluid mx-auto img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="img/planos.jpg" data-holder-rendered="true"
                         style="width: 500px; height: 500px;">
                 </div>
             </div>
@@ -124,7 +127,7 @@
                         <br>nossoEmail@dominio.com</p>
                 </div>
                 <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="img/contato.png" data-holder-rendered="true"
+                    <img class="featurette-image img-fluid mx-auto img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="img/contato.png" data-holder-rendered="true"
                         style="width: 500px; height: 500px;">
                 </div>
             </div>
@@ -154,35 +157,11 @@
         <!-- /.container -->
         </div>
 
-
-
         <!-- FOOTER -->
-        <footer class="container">
-            <p class="float-right">
-                <a href="#">Back to top</a>
-            </p>
-            <p>© 2017 Company, Inc. ·
-                <a href="#">Privacy</a> ·
-                <a href="#">Terms</a>
-            </p>
-        </footer>
+        <?php include 'sisFooter.php' ?>
 
     </main>
 
-
-
-
-
-    <div id="lo-engage-ext-container">
-        <div data-reactroot=""></div>
-    </div>
-    <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;">
-        <defs>
-            <style type="text/css"></style>
-        </defs>
-        <text x="0" y="25" style="font-weight:bold;font-size:25pt;font-family:Arial, Helvetica, Open Sans, sans-serif">500x500</text>
-    </svg>
-    <link rel="stylesheet" type="text/css" href="chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/css/content.css">
 </body>
 
 </html>
