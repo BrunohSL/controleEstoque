@@ -16,85 +16,185 @@
 
     <?php include 'sisHeader.php';?>
 
-    <div class="container" style="margin-top: 100px;">
-        <form id="cadastroForm" action="insertUser.php" class="form-horizontal" role="form" method="POST">
-            <div class="row">
-                <div class="col-md-3"></div>
-                <div class="col-md-6">
-                    <h2>Dados Cadastrais</h2>
-                    <hr>
+    <div class="container row" style="margin-top: 100px; background-color: red; margin-left: 100px;">
+        <div class="container col-md-6" style="background-color: blue;">
+            <!-- Inicio do container de INSERT -->
+            <!-- ====================================================================== -->
+            <form id="cadastroForm" action="insertUser.php" class="form-horizontal" role="form" method="POST">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <h2 style="text-align: center;">Cadastrar Usuario</h2>
+                        <hr>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3"></div>
-                <div class="col-md-6">
-                    <div class="form-group has-danger">
-                        <label class="sr-only" for="email">E-Mail Address</label>
-                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                            <div class="input-group-addon" style="width: 2.6rem">
-                                <i class="fa fa-at" aria-hidden="true"></i>
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <div class="form-group has-danger">
+                            <label class="sr-only" for="name">User Name</label>
+                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                <div class="input-group-addon" style="width: 2.6rem">
+                                    <i class="fa fa-user-o"></i>
+                                </div>
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Nome Completo" required autofocus>
                             </div>
-                            <input type="text" name="email" class="form-control" id="email" placeholder="you@example.com" required autofocus>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3"></div>
-                <div class="col-md-6">
-                    <div class="form-group has-danger">
-                        <label class="sr-only" for="name">User Name</label>
-                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                            <div class="input-group-addon" style="width: 2.6rem">
-                                <i class="fa fa-user-o"></i>
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <div class="form-group has-danger">
+                            <label class="sr-only" for="email">E-Mail Address</label>
+                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                <div class="input-group-addon" style="width: 2.6rem">
+                                    <i class="fa fa-at" aria-hidden="true"></i>
+                                </div>
+                                <input type="email" name="email" class="form-control" id="email" placeholder="you@example.com" required autofocus>
                             </div>
-                            <input type="text" name="name" class="form-control" id="email" placeholder="Usuário" required autofocus>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3"></div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label class="sr-only" for="password">Senha</label>
-                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                            <div class="input-group-addon" style="width: 2.6rem">
-                                <i class="fa fa-key"></i>
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <div class="form-group has-danger">
+                            <label class="sr-only" for="username">User Name</label>
+                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                <div class="input-group-addon" style="width: 2.6rem">
+                                    <i class="fa fa-user-o"></i>
+                                </div>
+                                <input type="text" name="username" class="form-control" id="username" placeholder="Login" required autofocus>
                             </div>
-                            <input type="password" name="password" class="form-control" id="password" placeholder="Senha" required>
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <div class="form-group">
+                            <label class="sr-only" for="password">Senha</label>
+                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                <div class="input-group-addon" style="width: 2.6rem">
+                                    <i class="fa fa-key"></i>
+                                </div>
+                                <input type="password" name="password" class="form-control" id="password" placeholder="Senha" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="row">
-                <div class="col-md-3"></div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label class="sr-only" for="password">Confirmação de Senha</label>
-                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                            <div class="input-group-addon" style="width: 2.6rem">
-                                <i class="fa fa-key"></i>
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <div class="form-group">
+                            <label class="sr-only" for="password">Confirmação de Senha</label>
+                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                <div class="input-group-addon" style="width: 2.6rem">
+                                    <i class="fa fa-key"></i>
+                                </div>
+                                <input type="password" name="confirmPassword" class="form-control" id="confirmPassword" placeholder="Confirmação de senha">
                             </div>
-                            <input type="password" name="confirmPassword" class="form-control" id="confirmPassword" placeholder="Confirmação de senha">
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="row" style="padding-top: 1rem">
-                <div class="col-md-3"></div>
-                <div class="col-md-6">
-                    <button type="submit" class="btn btn-success" id="btnCadastro" style="width: 100%;">
-                        Cadastrar</button>
+                <div class="row" style="padding-top: 1rem">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <button type="submit" class="btn btn-success" id="btnCadastro" style="width: 100%;">
+                            Cadastrar</button>
+                    </div>
                 </div>
-            </div>
-        </form>
+            </form>
+        </div>
+        <!-- Fim do container de INSERT -->
+        <!-- ====================================================================== -->
+
+        <!-- Inicio do container de UPDATE -->
+        <div class="container col-md-6" style="background-color: lightblue;">
+            <form id="cadastroForm" action="insertUser.php" class="form-horizontal" role="form" method="POST">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <h2>Editar Usuario</h2>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <div class="form-group has-danger">
+                            <label class="sr-only" for="email">E-Mail Address</label>
+                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                <div class="input-group-addon" style="width: 2.6rem">
+                                    <i class="fa fa-at" aria-hidden="true"></i>
+                                </div>
+                                <input type="text" name="email" class="form-control" id="email" placeholder="you@example.com" required autofocus>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <div class="form-group has-danger">
+                            <label class="sr-only" for="name">User Name</label>
+                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                <div class="input-group-addon" style="width: 2.6rem">
+                                    <i class="fa fa-user-o"></i>
+                                </div>
+                                <input type="text" name="name" class="form-control" id="email" placeholder="Usuário" required autofocus>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <div class="form-group">
+                            <label class="sr-only" for="password">Senha</label>
+                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                <div class="input-group-addon" style="width: 2.6rem">
+                                    <i class="fa fa-key"></i>
+                                </div>
+                                <input type="password" name="password" class="form-control" id="password" placeholder="Senha" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <div class="form-group">
+                            <label class="sr-only" for="password">Confirmação de Senha</label>
+                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                <div class="input-group-addon" style="width: 2.6rem">
+                                    <i class="fa fa-key"></i>
+                                </div>
+                                <input type="password" name="confirmPassword" class="form-control" id="confirmPassword" placeholder="Confirmação de senha">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" style="padding-top: 1rem">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <button type="submit" class="btn btn-success" id="btnUpdate" style="width: 100%;">
+                            Atualizar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- Fim do container de UPDATE -->
+        <!-- ====================================================================== -->
+
     </div>
 
     <script src="js/validacao.js"></script>
-    <!-- <script src="js/cadastro.js"></script> -->
 
 </body>
 

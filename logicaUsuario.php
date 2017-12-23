@@ -2,12 +2,12 @@
 
 include 'connection.php';
 
-function insereUsuario($connection, $email, $name, $password){
-    $sql = "INSERT INTO USERS (EMAIL_USER, lOGIN_USER, KEY_USER) VALUES ('$email', '$name', '$password');";
+function insereUsuario($connection, $user, $password, $email, $name){
+    $sql = "INSERT INTO USERS (LOGIN_USER, KEY_USER, EMAIL_USER, NAME_USER) VALUES ('$user', '$password', '$email', '$name');";
     return mysqli_query($connection, $sql);
 }
 
-function editaUsuario($connection, $email, $name, $password, $userId){
+function editaUsuario($connection, $user, $password, $email, $name){
     $sql = "UPDATE USER SET EMAIL_USER = '$email', lOGIN_USER = '$name', ID_USER = '$idUsuario';";
     return mysqli_query($connection, $sql);
 }

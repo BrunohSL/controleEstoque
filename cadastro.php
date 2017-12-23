@@ -16,12 +16,12 @@
 
     <?php include 'sisHeader.php';?>
 
-    <div class="container" style="margin-top: 100px;">
+    <div class="container">
         <form id="cadastroForm" action="insertUser.php" class="form-horizontal" role="form" method="POST">
             <div class="row">
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
-                    <h2>Dados Cadastrais</h2>
+                    <h2>Cadastrar Usuario</h2>
                     <hr>
                 </div>
             </div>
@@ -86,7 +86,7 @@
             <div class="row" style="padding-top: 1rem">
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
-                    <button type="submit" class="btn btn-success" id="btnCadastro" style="width: 100%;">
+                    <button type="submit" class="btn btn-success" id="btnUpdate" style="width: 100%;">
                         Cadastrar</button>
                 </div>
             </div>
