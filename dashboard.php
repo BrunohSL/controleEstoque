@@ -7,19 +7,16 @@
   <meta name="author" content="">
   <link rel="icon" href="../../../../favicon.ico">
 
+  <!-- inclui os scripts e links de cdn -->
   <?php include 'references.php';?>
 
-  <title>Dashboard Template for Bootstrap</title>
+  <title>Dashboard</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="dashboard.css" rel="stylesheet">
 </head>
 
 <body>
 
+  <!-- inclui o header do sistema -->
   <?php include 'sisHeader.php';?>
 
   <div class="container-fluid">
