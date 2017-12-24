@@ -71,7 +71,7 @@
         <h1>Dashboard</h1>
 
         <h2>Section title</h2>
-        <div class="table-responsive col-md-3">
+        <div class="table-responsive col-md-6">
           <table class="table table-striped">
             <thead>
               <tr>

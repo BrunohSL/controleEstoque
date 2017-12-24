@@ -6,9 +6,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <?php include 'references.php'; ?>
+    <?php
+    include 'references.php';
+    include 'connection.php';
+    include 'logicaUsuario.php';
+    ?>
 
-    <title>Cadastre-se</title>
+        <title>Cadastre-se</title>
 
 </head>
 
@@ -126,6 +130,20 @@
                     <div class="col-md-1"></div>
                     <div class="col-md-10">
                         <div class="form-group has-danger">
+                            <label class="sr-only" for="name">User Name</label>
+                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                <div class="input-group-addon" style="width: 2.6rem">
+                                    <i class="fa fa-user-o"></i>
+                                </div>
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Nome Completo" required autofocus>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <div class="form-group has-danger">
                             <label class="sr-only" for="email">E-Mail Address</label>
                             <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                                 <div class="input-group-addon" style="width: 2.6rem">
@@ -150,35 +168,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-10">
-                        <div class="form-group">
-                            <label class="sr-only" for="password">Senha</label>
-                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                                <div class="input-group-addon" style="width: 2.6rem">
-                                    <i class="fa fa-key"></i>
-                                </div>
-                                <input type="password" name="password" class="form-control" id="password" placeholder="Senha" required>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-10">
-                        <div class="form-group">
-                            <label class="sr-only" for="password">Confirmação de Senha</label>
-                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                                <div class="input-group-addon" style="width: 2.6rem">
-                                    <i class="fa fa-key"></i>
-                                </div>
-                                <input type="password" name="confirmPassword" class="form-control" id="confirmPassword" placeholder="Confirmação de senha">
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
                 <div class="row" style="padding-top: 1rem">
                     <div class="col-md-3"></div>
@@ -191,7 +180,63 @@
         </div>
         <!-- Fim do container de UPDATE -->
         <!-- ====================================================================== -->
+        <div class="container" style="background-color: yellow;">
+            <div class="row">
+                <?php
+                $sql = buscaUsuario($connection);
+        if($sql){
 
+        ?>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Login</th>
+                                <th>Email</th>
+                                <th>Nome</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                        while($show = mysqli_fetch_assoc($sql)){
+                    ?>
+                        <tr>
+                            <td>
+                                <?php echo $show['ID_USER']?>
+                            </td>
+                            <td>
+                                <?php echo $show['LOGIN_USER']?>
+                            </td>
+                            <td>
+                                <?php echo $show['EMAIL_USER']?>
+                            </td>
+                            <td>
+                                <?php echo $show['NAME_USER']?>
+                            </td>
+                            <td>
+                                <a href="updateUser.php?userId=<?=$show['ID_USER']?>" class="btn btn-warning">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="deleteUser.php?userId=<?=$show['ID_USER']?>" class="btn btn-danger">
+                                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <?php
+                        }
+                        ?>
+                        </tbody>
+                    </table>
+                    <?php
+            } else {
+                echo "Falha ao efetuar a busca";
+            }
+            ?>
+            </div>
+        </div>
     </div>
 
     <script src="js/validacao.js"></script>

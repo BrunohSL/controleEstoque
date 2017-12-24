@@ -8,11 +8,24 @@ function insereUsuario($connection, $user, $password, $email, $name){
 }
 
 function editaUsuario($connection, $user, $password, $email, $name){
-    $sql = "UPDATE USER SET EMAIL_USER = '$email', lOGIN_USER = '$name', ID_USER = '$idUsuario';";
+    $sql = "UPDATE USER SET EMAIL_USER = '$email', LOGIN_USER = '$name', ID_USER = '$idUsuario';";
     return mysqli_query($connection, $sql);
 }
 
-function excluiUsuario($connectio, $userId){
-    $sql = "DELETE FROM USERS WHERE ID_USER = '$userId';";
+function excluiUsuario($connection, $id){
+    $sql = "DELETE FROM USERS WHERE ID_USER = {$id}";
+    // print_r($id);
+    // die('xxx');
     return mysqli_query($connection, $sql);
+}
+
+function buscaUsuario($connection){
+    $sql = "SELECT * FROM USERS;";
+    return mysqli_query($connection, $sql);
+}
+
+function buscaUsuarioId($connection, $userId){
+    $sql = "SELECT * FROM USERS;";
+    $result = mysqli_query($connection, $sql);
+    return mysqli_fetch_assoc($result);
 }
