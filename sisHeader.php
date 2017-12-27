@@ -14,6 +14,11 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav ml-auto" id="teste">
         <li class="nav-item">
+          <a class="nav-link" style="color: white;" href="testeUpdate.php">Teste Update
+            <span class="sr-only"></span>
+          </a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" style="color: white;" href="testeCadastro.php">Teste Cadastro
             <span class="sr-only"></span>
           </a>
@@ -27,7 +32,7 @@
           <a class="nav-link" style="color: white;" href="cadastro.php">Cadastre-se</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" style="color: white;" href="">Entrar</a>
+          <a class="nav-link" style="color: white;" href="login.php">Entrar</a>
         </li>
       </ul>
     </div>

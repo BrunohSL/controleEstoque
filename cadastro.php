@@ -94,7 +94,7 @@
     </div>
 
     <script src="js/validacao.js"></script>
-    <!-- <script src="js/cadastro.js"></script> -->
+    <script src="js/validaUpdate.js"></script>
 
 </body>
 

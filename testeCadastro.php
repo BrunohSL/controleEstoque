@@ -20,8 +20,8 @@
 
     <?php include 'sisHeader.php';?>
 
-    <div class="container row" style="margin-top: 100px; background-color: red; margin-left: 100px;">
-        <div class="container col-md-6" style="background-color: blue;">
+    <div class="container row" style="margin-top: 100px; margin-left: 100px;">
+        <div class="container col-md-6">
             <!-- Inicio do container de INSERT -->
             <!-- ====================================================================== -->
             <form id="cadastroForm" action="insertUser.php" class="form-horizontal" role="form" method="POST">
@@ -111,77 +111,23 @@
                             Cadastrar</button>
                     </div>
                 </div>
+                <hr>
             </form>
         </div>
         <!-- Fim do container de INSERT -->
         <!-- ====================================================================== -->
 
-        <!-- Inicio do container de UPDATE -->
-        <div class="container col-md-6" style="background-color: lightblue;">
-            <form id="cadastroForm" action="insertUser.php" class="form-horizontal" role="form" method="POST">
-                <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-10">
-                        <h2>Editar Usuario</h2>
-                        <hr>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-10">
-                        <div class="form-group has-danger">
-                            <label class="sr-only" for="name">User Name</label>
-                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                                <div class="input-group-addon" style="width: 2.6rem">
-                                    <i class="fa fa-user-o"></i>
-                                </div>
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Nome Completo" required autofocus>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-10">
-                        <div class="form-group has-danger">
-                            <label class="sr-only" for="email">E-Mail Address</label>
-                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                                <div class="input-group-addon" style="width: 2.6rem">
-                                    <i class="fa fa-at" aria-hidden="true"></i>
-                                </div>
-                                <input type="text" name="email" class="form-control" id="email" placeholder="you@example.com" required autofocus>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-10">
-                        <div class="form-group has-danger">
-                            <label class="sr-only" for="name">User Name</label>
-                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                                <div class="input-group-addon" style="width: 2.6rem">
-                                    <i class="fa fa-user-o"></i>
-                                </div>
-                                <input type="text" name="name" class="form-control" id="email" placeholder="Usuário" required autofocus>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row" style="padding-top: 1rem">
-                    <div class="col-md-3"></div>
-                    <div class="col-md-6">
-                        <button type="submit" class="btn btn-success" id="btnUpdate" style="width: 100%;">
-                            Atualizar</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <!-- Fim do container de UPDATE -->
-        <!-- ====================================================================== -->
-        <div class="container" style="background-color: yellow;">
+        <!-- Inicio da tabela de usuarios -->
+        <div class="container" style="margin-top: 50px;">
             <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <h2 style="text-align: center;">Cadastrar Usuario</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+
                 <?php
                 $sql = buscaUsuario($connection);
         if($sql){
@@ -201,31 +147,31 @@
                             <?php
                         while($show = mysqli_fetch_assoc($sql)){
                     ?>
-                        <tr>
-                            <td>
-                                <?php echo $show['ID_USER']?>
-                            </td>
-                            <td>
-                                <?php echo $show['LOGIN_USER']?>
-                            </td>
-                            <td>
-                                <?php echo $show['EMAIL_USER']?>
-                            </td>
-                            <td>
-                                <?php echo $show['NAME_USER']?>
-                            </td>
-                            <td>
-                                <a href="updateUser.php?userId=<?=$show['ID_USER']?>" class="btn btn-warning">
-                                    <i class="fa fa-pencil" aria-hidden="true"></i>
-                                </a>
-                            </td>
-                            <td>
-                                <a href="deleteUser.php?userId=<?=$show['ID_USER']?>" class="btn btn-danger">
-                                    <i class="fa fa-trash-o" aria-hidden="true"></i>
-                                </a>
-                            </td>
-                        </tr>
-                        <?php
+                                <tr>
+                                    <td>
+                                        <?php echo $show['ID_USER']?>
+                                    </td>
+                                    <td>
+                                        <?php echo $show['LOGIN_USER']?>
+                                    </td>
+                                    <td>
+                                        <?php echo $show['EMAIL_USER']?>
+                                    </td>
+                                    <td>
+                                        <?php echo $show['NAME_USER']?>
+                                    </td>
+                                    <td>
+                                        <a href="testeUpdate.php?userId=<?=$show['ID_USER']?>" class="btn btn-warning">
+                                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="deleteUser.php?userId=<?=$show['ID_USER']?>" class="btn btn-danger">
+                                            <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <?php
                         }
                         ?>
                         </tbody>
@@ -240,6 +186,7 @@
     </div>
 
     <script src="js/validacao.js"></script>
+    <!-- <script src="js/validaUpdate.js"></script> -->
 
 </body>
 
