@@ -10,6 +10,7 @@
     include 'references.php';
     include 'connection.php';
     include 'updateUser.php';
+    require_once 'class/Usuario.php';
 
     $nome = $_GET['userName'];
     $email = $_GET['userEmail'];

@@ -2,13 +2,16 @@
 
 include 'connection.php';
 include 'logicaUsuario.php';
+require_once 'class/Usuario.php';
 
-$user = $_POST['username'];
-$password = sha1($_POST['password']);
-$email = $_POST['email'];
-$name = $_POST['name'];
+$usuario = new Usuario();
 
-if(insereUsuario($connection, $user, $password, $email, $name))
+$usuario->login = $_POST['username'];
+$usuario->senha = sha1($_POST['password']);
+$usuario->email = $_POST['email'];
+$usuario->nome = $_POST['name'];
+
+if(insereUsuario($connection, $usuario))
 {
     // echo '<script language="javascript"> swal("Good job!","Cadastrou com sucesso","success"); </script>';
     // echo 'swal("Good job!","Cadastrou com sucesso","success");';

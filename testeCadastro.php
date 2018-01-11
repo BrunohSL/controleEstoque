@@ -122,7 +122,7 @@
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-10">
-                    <h2 style="text-align: center;">Cadastrar Usuario</h2>
+                    <h2 style="text-align: center;">Usuarios Cadastrados</h2>
                     <hr>
                 </div>
             </div>
@@ -149,24 +149,24 @@
                     ?>
                                 <tr>
                                     <td>
-                                        <?php echo $show['ID_USER']?>
+                                        <?php echo $show['ID_USUARIO']?>
                                     </td>
                                     <td>
-                                        <?php echo $show['LOGIN_USER']?>
+                                        <?php echo $show['LOGIN_USUARIO']?>
                                     </td>
                                     <td>
-                                        <?php echo $show['EMAIL_USER']?>
+                                        <?php echo $show['EMAIL_USUARIO']?>
                                     </td>
                                     <td>
-                                        <?php echo $show['NAME_USER']?>
+                                        <?php echo $show['NOME_USUARIO']?>
                                     </td>
                                     <td>
-                                        <a href="testeUpdate.php?userId=<?=$show['ID_USER']?>" class="btn btn-warning">
+                                        <a href="testeUpdate.php?userId=<?=$show['ID_USUARIO']?>" class="btn btn-warning">
                                             <i class="fa fa-pencil" aria-hidden="true"></i>
                                         </a>
                                     </td>
                                     <td>
-                                        <a href="deleteUser.php?userId=<?=$show['ID_USER']?>" class="btn btn-danger">
+                                        <a href="deleteUser.php?userId=<?=$show['ID_USUARIO']?>" class="btn btn-danger">
                                             <i class="fa fa-trash-o" aria-hidden="true"></i>
                                         </a>
                                     </td>

@@ -5,14 +5,14 @@ include 'connection.php';
 $userForm = $_POST['name'];
 $passwordForm = sha1($_POST['password']);
 
-$sql = "SELECT lOGIN_USER, KEY_USER FROM USERS WHERE lOGIN_USER = '$userForm' AND KEY_USER = '$passwordForm';";
+$sql = "SELECT LOGIN_USUARIO, SENHA_USUARIO FROM USUARIOS WHERE LOGIN_USUARIO = '$userForm' AND SENHA_USUARIO = '$passwordForm';";
 
 if($query = mysqli_query($connection, $sql))
 {
     $result = mysqli_fetch_assoc($query);
     
-    $userDb = $result['lOGIN_USER'];
-    $passwordDb = $result['KEY_USER'];
+    $userDb = $result['LOGIN_USUARIO'];
+    $passwordDb = $result['SENHA_USUARIO'];
 
     if(($userDb == $userForm) && ($passwordDb == $passwordForm)){
         
