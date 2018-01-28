@@ -12,7 +12,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav ml-auto" id="teste">
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link" style="color: white;" href="testeUpdate.php">Teste Update
             <span class="sr-only"></span>

@@ -18,15 +18,11 @@ if($query = mysqli_query($connection, $sql))
         
         $_POST['name'] = $userForm;
 
-        header("Location: dashboard.php");
+        header("Location: sistema/dashboard.php");
     }
     else{
-        header("Location: login.php");
-        ?>
-            <script>
-                swal('Oops...','Login e/ou senha incorretos','error');
-            </script>
-        <?php
+        header("Location: login.php?login=1");
+        
         //echo 'Login e/ou senha incorretos';
     }
 }

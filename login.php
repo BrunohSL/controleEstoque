@@ -34,7 +34,7 @@
                         <label class="sr-only" for="email">E-Mail Address</label>
                         <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                             <div class="input-group-addon" style="width: 2.6rem">
-                            <i class="fa fa-user-o"></i>
+                                <i class="fa fa-user-o"></i>
                             </div>
                             <input type="text" name="name" class="form-control" id="name" placeholder="Usuário" required autofocus>
                         </div>
@@ -88,6 +88,20 @@
                     <a class="btn btn-link" href="/password/reset">Forgot Your Password?</a>
                 </div>
             </div>
+
+                <?php
+                // $teste = $_GET["login"];
+                //     var_dump($teste);
+                //     die('xxx');
+                    if($_GET['login'] == 1){
+                    ?>
+                    <div class="container row">
+                    <div class="col-md-3"></div>
+                    <div class="alert alert-danger col-md-6" style="margin-top: 20px;">Login ou senha inválido</div>
+                    </div>
+                    <?php
+                    }
+                ?>
         </form>
     </div>
 
