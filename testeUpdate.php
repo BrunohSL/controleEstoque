@@ -6,15 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <?php
-    include 'references.php';
-    include 'connection.php';
-    include 'updateUser.php';
-    require_once 'class/Usuario.php';
-
-    $nome = $_GET['userName'];
-    $email = $_GET['userEmail'];
-    $login = $_GET['loginUser'];
+    <?php include 'references.php';
     ?>
 
     <title>Cadastre-se</title>
@@ -25,9 +17,34 @@
 
     <?php include 'sisHeader.php';?>
 
+    <?php
+        include 'logicaUsuario.php';
+
+        $user = new Usuario();
+
+        $user->id = $_GET['userId'];
+
+        $userData = buscaUsuarioId($connection, $user->id);
+    ?>
+
     <!-- Inicio do container de UPDATE -->
     <div class="container col-md-6" style="background-color: lightblue;">
-        <form id="cadastroForm" action="insertUser.php" class="form-horizontal" role="form" method="POST">
+        <form id="cadastroForm" action="updateUser.php?userId=<?=$user->id?>" class="form-horizontal" role="form" method="POST">
+            <?php 
+
+                // print_r($user);
+                // die('xxx');
+
+                $user->nome = $userData['NOME_USUARIO'];
+                $user->email = $userData['EMAIL_USUARIO'];
+                $user->login = $userData['LOGIN_USUARIO'];
+            ?>
+        <!-- Array ( 
+        [ID_USUARIO] => 27 
+        [LOGIN_USUARIO] => maisUmLogin 
+        [SENHA_USUARIO] => 85136c79cbf9fe36bb9d05d0639c70c265c18d37 
+        [EMAIL_USUARIO] => outro@emailTeste.com 
+        [NOME_USUARIO] => mais um cadastro ) -->
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-10">
@@ -44,7 +61,7 @@
                             <div class="input-group-addon" style="width: 2.6rem">
                                 <i class="fa fa-user-o"></i>
                             </div>
-                            <input value="<?php echo $nome ?>" type="text" name="name" class="form-control" id="name" placeholder="Nome Completo" required autofocus>
+                            <input value="<?php echo $user->nome ?>" type="text" name="name" class="form-control" id="name" placeholder="Nome Completo">
                         </div>
                     </div>
                 </div>
@@ -58,7 +75,7 @@
                             <div class="input-group-addon" style="width: 2.6rem">
                                 <i class="fa fa-at" aria-hidden="true"></i>
                             </div>
-                            <input value="<?php echo $email ?>" type="text" name="email" class="form-control" id="email" placeholder="you@example.com" required autofocus>
+                            <input value="<?php echo $user->email ?>" type="text" name="email" class="form-control" id="email" placeholder="you@example.com">
                         </div>
                     </div>
                 </div>
@@ -72,7 +89,7 @@
                             <div class="input-group-addon" style="width: 2.6rem">
                                 <i class="fa fa-user-o"></i>
                             </div>
-                            <input value="<?php echo $login ?>" type="text" name="name" class="form-control" id="email" placeholder="Usuário" required autofocus>
+                            <input value="<?php echo $user->login ?>" type="text" name="login" class="form-control" id="login" placeholder="Usuário">
                         </div>
                     </div>
                 </div>
