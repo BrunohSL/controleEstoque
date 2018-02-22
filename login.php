@@ -16,7 +16,7 @@
 
     <?php include 'sisHeader.php';?>
 
-    <div class="container" style="margin-top: 100px;">
+    <div class="container marginTop">
         <form class="form-horizontal" role="form" method="POST" action="validaLogin.php">
             <div class="row">
                 <div class="col-md-3"></div>

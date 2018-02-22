@@ -15,6 +15,6 @@ jQuery(document).ready(function ($) {
         
         // alert(data[nomeParametro].valorParametro);
     } else{
-        alert('não tem parametro');
+        console.log('Não tem parametro');
     }
 })
