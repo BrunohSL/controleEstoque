@@ -1,0 +1,20 @@
+USUARIOS
++---------------+-------------+------+-----+---------+----------------+
+| Field         | Type        | Null | Key | Default | Extra          |
++---------------+-------------+------+-----+---------+----------------+
+| ID_USUARIO    | int(11)     | NO   | PRI | NULL    | auto_increment |
+| LOGIN_USUARIO | varchar(45) | NO   |     | NULL    |                |
+| SENHA_USUARIO | varchar(45) | NO   |     | NULL    |                |
+| EMAIL_USUARIO | varchar(45) | NO   |     | NULL    |                |
+| NOME_USUARIO  | varchar(45) | NO   |     | NULL    |                |
++---------------+-------------+------+-----+---------+----------------+
+
+PRODUTOS
++-------------------+--------------+------+-----+---------+----------------+
+| Field             | Type         | Null | Key | Default | Extra          |
++-------------------+--------------+------+-----+---------+----------------+
+| ID_PRODUTO        | int(11)      | NO   | PRI | NULL    | auto_increment |
+| NOME_PRODUTO      | varchar(255) | NO   |     | NULL    |                |
+| DESCRICAO_PRODUTO | varchar(255) | NO   |     | NULL    |                |
+| ID_USUARIO        | int(11)      | NO   |     | NULL    |                |
++-------------------+--------------+------+-----+---------+----------------+

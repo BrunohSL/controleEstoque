@@ -10,16 +10,7 @@ function insereUsuario($connection, Usuario $usuario){
 
 function updateUser($connection, Usuario $user){
     $sql = "UPDATE USUARIOS SET EMAIL_USUARIO = '$user->email', NOME_USUARIO = '$user->nome', LOGIN_USUARIO = '$user->login' WHERE ID_USUARIO = $user->id;";
-    // die($sql);
-    // $query = mysqli_query($connection, $sql);
-
     return mysqli_query($connection, $sql);
-
-    // if(mysqli_query($connection, $sql)){
-    //     return 'Sucesso';
-    // } else {
-    //     return 'Deu ruim';
-    // }
 }
 
 function excluiUsuario($connection, Usuario $usuario){
