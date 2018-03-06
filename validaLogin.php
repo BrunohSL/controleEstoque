@@ -1,6 +1,6 @@
 <?php
 
-include 'connection.php';
+require_once 'connection.php';
 
 $userForm = $_POST['name'];
 $passwordForm = sha1($_POST['password']);
