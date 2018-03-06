@@ -15,7 +15,7 @@
 
 <body>
 
-    <?php include 'sisHeader.php';?>
+    <?php include 'siteHeader.php';?>
 
     <?php
         include 'logicaUsuario.php';
@@ -28,7 +28,7 @@
     ?>
 
     <!-- Inicio do container de UPDATE -->
-    <div class="container col-md-6" style="background-color: lightblue;">
+    <div class="container col-md-6 marginTop">
         <form id="cadastroForm" action="updateUser.php?userId=<?=$user->id?>" class="form-horizontal" role="form" method="POST">
             <?php 
 
@@ -56,7 +56,7 @@
                 <div class="col-md-1"></div>
                 <div class="col-md-10">
                     <div class="form-group has-danger">
-                        <label class="sr-only" for="name">User Name</label>
+                        <label for="name">User Name</label>
                         <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                             <div class="input-group-addon" style="width: 2.6rem">
                                 <i class="fa fa-user-o"></i>
@@ -70,7 +70,7 @@
                 <div class="col-md-1"></div>
                 <div class="col-md-10">
                     <div class="form-group has-danger">
-                        <label class="sr-only" for="email">E-Mail Address</label>
+                        <label for="email">E-Mail Address</label>
                         <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                             <div class="input-group-addon" style="width: 2.6rem">
                                 <i class="fa fa-at" aria-hidden="true"></i>
@@ -84,7 +84,7 @@
                 <div class="col-md-1"></div>
                 <div class="col-md-10">
                     <div class="form-group has-danger">
-                        <label class="sr-only" for="name">User Name</label>
+                        <label for="name">User Name</label>
                         <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                             <div class="input-group-addon" style="width: 2.6rem">
                                 <i class="fa fa-user-o"></i>

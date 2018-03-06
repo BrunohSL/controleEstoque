@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <?php include 'sisHeader.php';?>
+    <?php include 'siteHeader.php';?>
 
     <?php include 'sisFooter.php' ?>
     

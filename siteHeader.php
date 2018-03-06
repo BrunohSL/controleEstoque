@@ -1,11 +1,10 @@
 <header>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <a class="navbar-brand">
-
-      <h2 id="logo">EST
+      <h2 id="logo">EST</h2>
         <a href="index.php" style="text-decoration:none">
           <img src="img/logo.png">
-        </a>QUE
+        <h2 id="logo"></a>QUE
       </h2>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
