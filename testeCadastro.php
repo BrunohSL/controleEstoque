@@ -20,8 +20,8 @@
 
     <?php include 'sisHeader.php';?>
 
-    <div class="container row" style="margin-top: 100px; margin-left: 100px;">
-        <div class="container col-md-6">
+    <div class="container row col-md-10" style="margin-top: 100px; margin-left: 100px;">
+        <div class="container col-md-10">
             <!-- Inicio do container de INSERT -->
             <!-- ====================================================================== -->
             <form id="cadastroForm" action="insertUser.php" class="form-horizontal" role="form" method="POST">
@@ -113,9 +113,9 @@
                 </div>
                 <hr>
             </form>
-        </div>
         <!-- Fim do container de INSERT -->
         <!-- ====================================================================== -->
+        </div>
 
         <!-- Inicio da tabela de usuarios -->
         <div class="container" style="margin-top: 50px;">
