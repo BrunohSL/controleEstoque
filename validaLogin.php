@@ -19,7 +19,7 @@ if($query = mysqli_query($connection, $sql)){
         
         $_POST['name'] = $userForm;
         $_SESSION["sessao"] = $userDb;
-        header("Location: sistema/dashboard.php");
+        header("Location: sistema/views/dashboard.php");
     }
     else{
         header("Location: login.php?login=1");
