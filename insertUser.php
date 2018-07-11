@@ -11,16 +11,14 @@ $usuario->senha = sha1($_POST['password']);
 $usuario->email = $_POST['email'];
 $usuario->nome = $_POST['name'];
 
-if(insereUsuario($connection, $usuario))
-{
+if(insereUsuario($connection, $usuario)){
     // echo '<script language="javascript"> swal("Good job!","Cadastrou com sucesso","success"); </script>';
     // echo 'swal("Good job!","Cadastrou com sucesso","success");';
     // echo '</script>';
     echo 'Cadastrou com sucesso';
     header("Location: testeCadastro.php");
 }
-else
-{
+else{
     // echo '<script language="javascript">';
     // echo 'alert("Erro ao cadastrar")';
     // echo '</script>';
