@@ -149,24 +149,24 @@
                     ?>
                                 <tr>
                                     <td>
-                                        <?php echo $show['ID_USUARIO']?>
+                                        <?php echo $show['id_usuario_usu']?>
                                     </td>
                                     <td>
-                                        <?php echo $show['LOGIN_USUARIO']?>
+                                        <?php echo $show['st_login_usu']?>
                                     </td>
                                     <td>
-                                        <?php echo $show['EMAIL_USUARIO']?>
+                                        <?php echo $show['st_email_usu']?>
                                     </td>
                                     <td>
-                                        <?php echo $show['NOME_USUARIO']?>
+                                        <?php echo $show['st_nome_usu']?>
                                     </td>
                                     <td>
-                                        <a href="testeUpdate.php?userId=<?=$show['ID_USUARIO']?>" class="btn btn-warning">
+                                        <a href="testeUpdate.php?userId=<?=$show['id_usuario_usu']?>" class="btn btn-warning">
                                             <i class="fa fa-pencil" aria-hidden="true"></i>
                                         </a>
                                     </td>
                                     <td>
-                                        <a href="deleteUser.php?userId=<?=$show['ID_USUARIO']?>" class="btn btn-danger">
+                                        <a href="deleteUser.php?userId=<?=$show['id_usuario_usu']?>" class="btn btn-danger">
                                             <i class="fa fa-trash-o" aria-hidden="true"></i>
                                         </a>
                                     </td>

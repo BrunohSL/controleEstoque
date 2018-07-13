@@ -35,9 +35,9 @@
                 // print_r($user);
                 // die('xxx');
 
-                $user->nome = $userData['NOME_USUARIO'];
-                $user->email = $userData['EMAIL_USUARIO'];
-                $user->login = $userData['LOGIN_USUARIO'];
+                $user->nome = $userData['st_nome_usu'];
+                $user->email = $userData['st_email_usu'];
+                $user->login = $userData['st_login_usu'];
             ?>
         <!-- Array ( 
         [ID_USUARIO] => 27 

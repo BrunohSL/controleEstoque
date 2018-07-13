@@ -4,27 +4,28 @@ require_once 'connection.php';
 require_once 'class/Usuario.php';
 
 function insereUsuario($connection, Usuario $usuario){
-    $sql = "INSERT INTO USUARIOS (LOGIN_USUARIO, SENHA_USUARIO, EMAIL_USUARIO, NOME_USUARIO) VALUES ('$usuario->login', '$usuario->senha', '$usuario->email', '$usuario->nome');";
+    $sql = "INSERT INTO usuario (st_login_usu, st_senha_usu, st_email_usu, st_nome_usu) VALUES ('$usuario->login', '$usuario->senha', '$usuario->email', '$usuario->nome');";
+    
     return mysqli_query($connection, $sql);
 }
 
 function updateUser($connection, Usuario $user){
-    $sql = "UPDATE USUARIOS SET EMAIL_USUARIO = '$user->email', NOME_USUARIO = '$user->nome', LOGIN_USUARIO = '$user->login' WHERE ID_USUARIO = $user->id;";
+    $sql = "UPDATE usuario SET st_email_usu = '$user->email', st_nome_usu = '$user->nome', st_login_usu = '$user->login' where id_usuario_usu = $user->id;";
     return mysqli_query($connection, $sql);
 }
 
 function excluiUsuario($connection, Usuario $usuario){
-    $sql = "DELETE FROM USUARIOS WHERE ID_USUARIO = {$usuario->id}";
+    $sql = "DELETE FROM usuario WHERE id_usuario_usu = {$usuario->id}";
     return mysqli_query($connection, $sql);
 }
 
 function buscaUsuario($connection){
-    $sql = "SELECT * FROM USUARIOS;";
+    $sql = "SELECT * FROM usuario;";
     return mysqli_query($connection, $sql);
 }
 
 function buscaUsuarioId($connection, $id){
-    $sql = "SELECT * FROM USUARIOS WHERE ID_USUARIO = $id;";
+    $sql = "SELECT * FROM usuario WHERE id_usuario_usu = $id;";
     $result = mysqli_query($connection, $sql);
     var_dump($result);
     return mysqli_fetch_assoc($result);
