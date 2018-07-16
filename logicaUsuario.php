@@ -5,7 +5,6 @@ require_once 'class/Usuario.php';
 
 function insereUsuario($connection, Usuario $usuario){
     $sql = "INSERT INTO usuario (st_login_usu, st_senha_usu, st_email_usu, st_nome_usu) VALUES ('$usuario->login', '$usuario->senha', '$usuario->email', '$usuario->nome');";
-    
     return mysqli_query($connection, $sql);
 }
 
