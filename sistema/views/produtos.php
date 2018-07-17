@@ -216,11 +216,6 @@
               </div>
               <div class="row">
 
-                <?php
-                // $sql = buscaUsuario($connection);
-        // if($sql){
-
-        ?>
                   <table class="table table-striped">
                     <thead>
                       <tr>
