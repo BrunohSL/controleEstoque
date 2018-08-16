@@ -6,9 +6,9 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <?php include 'sisReferences.php'; ?>
+  <?php require_once "sisReferences.php" ?>
 
-  <title>Página Inicial</title>
+  <title>Nome da página</title>
 
 </head>
 
@@ -28,19 +28,10 @@
 
     <div class="container-fluid">
       <div class="row">
-
-        <?php require_once 'menuLateral.php'; ?>
-
-          <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3" style="margin-top: 5%">
-            <h1>Tela Inicial</h1>
-            <div class"row col-md-6">
-              <a href="produtos.php" class="btn btn-primary col-md-5">Cadastro de Produtos</a>
-              <a href="fornecedores.php" style="margin-left: 40px;" class="btn btn-primary col-md-5">Fornecedores</a>
-            </div>
-
-          </main>
+        <?php require_once 'menuLateral.php'; ?>  
       </div>
     </div>
 
-  </body>
+</body>
+
 </html>
