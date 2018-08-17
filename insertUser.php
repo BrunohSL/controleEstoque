@@ -1,7 +1,7 @@
 <?php
 
-include 'connection.php';
-include 'logicaUsuario.php';
+require_once 'connection.php';
+require_once 'logicaUsuario.php';
 require_once 'class/Usuario.php';
 
 $usuario = new Usuario();

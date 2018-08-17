@@ -6,6 +6,7 @@ class Produto{
     private $nome;
     private $valorCompra;
     private $valorVenda;
+    private $quantidade;
     private $quantidadeMaxima;
     private $quantidadeMinima;
     private $categoria;
@@ -52,6 +53,14 @@ class Produto{
 
     public function setValorVenda($valorVenda){
         $this->valorVenda = $valorVenda;
+    }
+
+    public function getQuantidade(){
+        return $this->quantidade;
+    }
+
+    public function setQuantidade($quantidade){
+        $this->quantidade = $quantidade;
     }
 
     public function getQuantidadeMaxima(){

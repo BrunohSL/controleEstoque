@@ -37,10 +37,8 @@
               <a href="produtos.php" class="btn btn-primary col-md-5">Cadastro de Produtos</a>
               <a href="fornecedores.php" style="margin-left: 40px;" class="btn btn-primary col-md-5">Fornecedores</a>
             </div>
-
           </main>
       </div>
     </div>
-
   </body>
 </html>
