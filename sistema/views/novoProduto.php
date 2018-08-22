@@ -122,7 +122,7 @@
                     <label class="sr-only" for="name">Fornecedor</label>
                     <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                     </div>
-                    <input type="text" name="fornecedor" class="form-control" id="fornecedor" placeholder="Fornecedor" required>
+                    <input type="text" name="fornecedor" class="form-control" id="fornecedor" placeholder="Fornecedor">
                     </div>
                 </div>
             </div>

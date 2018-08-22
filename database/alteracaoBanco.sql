@@ -42,3 +42,16 @@ ADD CONSTRAINT `fk_PRODUTOS_USUARIO1`
   REFERENCES `controleEstoque`.`usuario` (`id_usuario_usu`)
   ON DELETE NO ACTION
   ON UPDATE NO ACTION;
+
+-- Feito para testar cadastro de fornecedores --
+-- Retirando NOT NULL da coluna id_endereco_for --
+ALTER TABLE `controleEstoque`.`fornecedor` 
+DROP FOREIGN KEY `fk_FORNECEDORES_ENDERECO1`;
+ALTER TABLE `controleEstoque`.`fornecedor` 
+CHANGE COLUMN `id_endereco_end` `id_endereco_end` INT(11) NULL ;
+ALTER TABLE `controleEstoque`.`fornecedor` 
+ADD CONSTRAINT `fk_FORNECEDORES_ENDERECO1`
+  FOREIGN KEY (`id_endereco_end`)
+  REFERENCES `controleEstoque`.`endereco` (`id_endereco_end`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;

@@ -1,7 +1,6 @@
 <?php
 
 class Fornecedor{
-
     private $id;
     private $razaoSocial;
     private $nomeFantasia;
@@ -20,23 +19,23 @@ class Fornecedor{
         $this->id = $id;
     }
 
-    private function getRazaoSocial(){
+    public function getRazaoSocial(){
         return $this->razaoSocial;
     }
 
-    private function setRazaoSocial($razaoSocial){
+    public function setRazaoSocial($razaoSocial){
         $this->razaoSocial = $razaoSocial;
     }
 
-    private function getNomeFantasia(){
+    public function getNomeFantasia(){
         return $this->nomeFantasia;
     }
 
-    private function setNomeFantasia($nomeFantasia){
+    public function setNomeFantasia($nomeFantasia){
         $this->nomeFantasia = $nomeFantasia;
     }
 
-    private function getCpf(){
+    public function getCpf(){
         return $this->cpf;
     }
 

@@ -130,9 +130,7 @@
 
                 <?php
                 $sql = buscaUsuario($connection);
-        if($sql){
-
-        ?>
+                if($sql){ ?>
                     <table class="table table-striped">
                         <thead>
                             <tr>
@@ -145,7 +143,7 @@
                         </thead>
                         <tbody>
                             <?php
-                        while($show = mysqli_fetch_assoc($sql)){
+                        while($show = mysqli_fetch_assoc($sql)){ //print_r($show);die('sss');
                     ?>
                                 <tr>
                                     <td>

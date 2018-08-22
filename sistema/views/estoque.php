@@ -6,7 +6,9 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <?php require_once "sisReferences.php" ?>
+  <?php require_once "sisReferences.php"; ?>
+  <?php require_once "../../connection.php"; ?>
+  <?php require_once '../controllers/logicaProduto.php'; ?>
 
   <title>Estoque</title>
 
@@ -47,66 +49,79 @@
               </div>
               <div class="row" style="width:125%;">
 
+                <?php
+                  $sql = buscaProdutos($connection);
+                  if($sql){
+                ?>
+
                 <!-- Inicio do grid -->
                 <table class="table table-striped">
                   <thead>
                     <tr>
                       <th>ID</th>
+                      <th>Codigo</th>
                       <th>Nome</th>
                       <th>Valor Compra</th>
                       <th>Valor Venda</th>
-                      <th>Quantidade em estoque</th>
-                      <th>Quantidade máxima</th>
+                      <!-- <th>Quantidade em estoque</th> -->
                       <th>Quantidade mínima</th>
+                      <th>Quantidade máxima</th>
                       <th>Unidade</th>
                       <th>Categoria</th>
-                      <th></th>
+                      <!-- <th></th> -->
                     </tr>
                   </thead>
+
+                  
+
                   <tbody>
-                    <?php
-                      // while($show = mysqli_fetch_assoc($sql)){
-                  ?>
+                    <?php while($show = mysqli_fetch_assoc($sql)){ //print_r($show); die('ccc');?>
                       <tr>
-                        <td>1
-                          <?php //echo $show['ID_USUARIO']?>
-                        </td>
-                        <td>cabeça do meu pau
-                          <?php //echo $show['LOGIN_USUARIO']?>
-                        </td>
-                        <td>100,00
-                          <?php //echo $show['EMAIL_USUARIO']?>
-                        </td>
-                        <td>150,00
-                          <?php //echo $show['NOME_USUARIO']?>
-                        </td>
-                        <td>3
-                          <?php //echo $show['NOME_USUARIO']?>
-                        </td>
-                        <td>5
-                          <?php //echo $show['NOME_USUARIO']?>
-                        </td>
-                        <td>1
-                          <?php //echo $show['NOME_USUARIO']?>
-                        </td>
-                        <td>cm
-                          <?php //echo $show['NOME_USUARIO']?>
-                        </td>
-                        <td>Objeto de prazer
-                          <?php //echo $show['NOME_USUARIO']?>
+                        <td>
+                          <?php echo $show['id_produto_prd']?>
                         </td>
                         <td>
-                          <a href="testeUpdate.php?userId=<?=$show['ID_USUARIO']?>" class="btn btn-warning">
+                          <?php echo $show['st_codigo_prd']?>
+                        </td>
+                        <td>
+                          <?php echo $show['st_nome_prd']?>
+                        </td>
+                        <td>
+                          <?php echo $show['vl_compra_prd']?>
+                        </td>
+                        <td>
+                          <?php echo $show['vl_venda_prd']?>
+                        </td>
+                        <td>
+                          <?php echo $show['qnt_minima_prd']?>
+                        </td>
+                        <td>
+                          <?php echo $show['qnt_maxima_prd']?>
+                        </td>
+                        <td>
+                          <?php echo $show['id_unidade_uni']?>
+                        </td>
+                        <td>
+                          <?php echo $show['id_categoria_cat']?>
+                        </td>
+                        <td>
+                        <button class="btn btn-warning" data-toggle="modal" data-target="#novoFornecedor">
+                          <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </button>
+                        
+                          <!-- <a href="testeUpdate.php?userId=<?=$show['id_produto_prd']?>" class="btn btn-warning">
                             <i class="fa fa-pencil" aria-hidden="true"></i>
-                          </a>
+                          </a> -->
                         </td>
                         <td>
-                          <a href="deleteUser.php?userId=<?=$show['ID_USUARIO']?>" class="btn btn-danger">
+                          <a href="deleteUser.php?userId=<?=$show['id_produto_prd']?>" class="btn btn-danger">
                             <i class="fa fa-trash-o" aria-hidden="true"></i>
                           </a>
                         </td>
                       </tr>
+                      <?php } ?> <!-- Fim do while php que preenche o grid -->
                   </tbody>
+                  <?php } ?> <!-- Fim do if php com o select do grid -->
                 </table> <!-- Fim do grid -->
               </div> <!-- fim div class="row" -->
             </div> <!-- fim div class="container" - grid dos produtos -->
